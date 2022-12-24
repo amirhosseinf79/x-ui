@@ -5,7 +5,7 @@ apt install curl -y
 
 systemctl start resolvconf.service
 systemctl enable resolvconf.service
-systemctl status resolvconf.service
+# systemctl status resolvconf.service
 
 read -p "Enter Domain: " domain
 read -p "Enter Email [Empty for default]: " email
