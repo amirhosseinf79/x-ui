@@ -16,6 +16,9 @@ echo Domain: $domain
 read -p "Press enter to continue..."
 
 echo Setting up DNS...
+echo nameserver 8.8.8.8
+echo nameserver 8.8.4.4
+read -p "Press enter to continue..."
 nano /etc/resolvconf/resolv.conf.d/head
 systemctl restart resolvconf.service
 
